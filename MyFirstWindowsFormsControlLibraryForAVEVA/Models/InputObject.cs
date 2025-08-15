@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace MyFirstWindowsFormsControlLibraryForAVEVA.Models
 {
-    [TypeConverter(typeof(ExpandableObjectConverter))] //
+    [TypeConverter(typeof(ExpandableObjectConverter))]
     public class InputObject
     {
         public enum CON_TYPE
@@ -18,14 +18,25 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA.Models
         [Description("The tag name used in AVEVA.")]
         public string Tag { get; set; }
 
-        // Current active state
+        private bool isActive;
+
+        // Current active state - now updates PilotImage when changed from AVEVA
         [Category("Runtime State")]
         [Description("Whether this input is active.")]
-        public bool IsActive { get; set; }
+        public bool IsActive
+        {
+            get => isActive;
+            set
+            {
+                isActive = value;
+                if (PilotImage != null)
+                    PilotImage.Visible = isActive;
+            }
+        }
 
         [Category("Initial Status")]
         [Description("Whether this input is active or inactive at the start.")]
-        public bool initialValue { get; set; }
+        public bool InitialValue { get; set; }
 
         // Type of contact
         [Category("Input Settings")]
@@ -41,16 +52,19 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA.Models
         public InputObject()
         { } // Needed for property grid serialization
 
-        public InputObject(string argTag, Label argButton, PictureBox argPilotPicture, CON_TYPE argConnType, Boolean argInitialValue)
+        public InputObject(string argTag, Label argButton, PictureBox argPilotPicture, CON_TYPE argConnType, bool argInitialValue)
         {
             Tag = argTag;
             AssociatedButton = argButton;
             PilotImage = argPilotPicture;
             ConnectionType = argConnType;
-            IsActive = argInitialValue;
-            argPilotPicture.Visible = argInitialValue;
+            InitialValue = argInitialValue;
+            IsActive = argInitialValue; // Will also set PilotImage.Visible
         }
 
+        /// <summary>
+        /// Called by UI events when button is pressed or released.
+        /// </summary>
         public void SetActive(bool buttonPressed)
         {
             // Determine "active" state based on connection type
@@ -62,9 +76,6 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA.Models
             {
                 IsActive = !buttonPressed;
             }
-
-            if (PilotImage != null)
-                PilotImage.Visible = IsActive;
         }
 
         public override string ToString()

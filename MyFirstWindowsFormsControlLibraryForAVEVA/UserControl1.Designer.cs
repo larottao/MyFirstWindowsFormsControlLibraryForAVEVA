@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.pilotLightRed = new System.Windows.Forms.PictureBox();
             this.pilotLightYellow = new System.Windows.Forms.PictureBox();
             this.pilotLightGreen = new System.Windows.Forms.PictureBox();
@@ -41,6 +41,7 @@
             this.buttonGreen = new System.Windows.Forms.Label();
             this.buttonYellow = new System.Windows.Forms.Label();
             this.buttonRed = new System.Windows.Forms.Label();
+            this.labelVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightRed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightYellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightGreen)).BeginInit();
@@ -49,17 +50,16 @@
             this.panelFaceplate.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(368, 39);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "My Ugly PLC Test Setup";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(23, 29);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(368, 39);
+            this.labelTitle.TabIndex = 3;
+            this.labelTitle.Text = "My Ugly PLC Test Setup";
             // 
             // pilotLightRed
             // 
@@ -175,11 +175,21 @@
             this.buttonRed.Size = new System.Drawing.Size(46, 47);
             this.buttonRed.TabIndex = 13;
             // 
+            // labelVersion
+            // 
+            this.labelVersion.AutoSize = true;
+            this.labelVersion.Location = new System.Drawing.Point(1091, 43);
+            this.labelVersion.Name = "labelVersion";
+            this.labelVersion.Size = new System.Drawing.Size(32, 21);
+            this.labelVersion.TabIndex = 14;
+            this.labelVersion.Text = "1.1";
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelVersion);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.panelFaceplate);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -198,7 +208,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.PictureBox pilotLightRed;
         private System.Windows.Forms.PictureBox pilotLightYellow;
         private System.Windows.Forms.PictureBox pilotLightGreen;
@@ -210,5 +220,6 @@
         private System.Windows.Forms.Label buttonYellow;
         private System.Windows.Forms.Label buttonRed;
         private System.Windows.Forms.Label buttonWhite;
+        private System.Windows.Forms.Label labelVersion;
     }
 }
