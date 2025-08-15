@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\myfirstwindowsformscontrollibraryforaveva\\models\\inputobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|solutionrelative:myfirstwindowsformscontrollibraryforaveva\\models\\inputobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|c:\\repositorios\\myfirstwindowsformscontrollibraryforaveva\\myfirstwindowsformscontrollibraryforaveva\\myfirstwindowsformscontrollibraryforaveva\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|solutionrelative:myfirstwindowsformscontrollibraryforaveva\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\myfirstwindowsformscontrollibraryforaveva\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|solutionrelative:myfirstwindowsformscontrollibraryforaveva\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\myfirstwindowsformscontrollibraryforaveva\\usercontrol1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42ED1DCB-E531-4904-8797-EE95AB691208}|MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA.csproj|solutionrelative:myfirstwindowsformscontrollibraryforaveva\\usercontrol1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControl1.Designer.cs",
+              "DocumentMoniker": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.Designer.cs",
+              "RelativeDocumentMoniker": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.Designer.cs",
+              "ToolTip": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.Designer.cs",
+              "RelativeToolTip": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.Designer.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAArwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T07:01:46.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InputObject.cs",
+              "DocumentMoniker": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\Models\\InputObject.cs",
+              "RelativeDocumentMoniker": "MyFirstWindowsFormsControlLibraryForAVEVA\\Models\\InputObject.cs",
+              "ToolTip": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\Models\\InputObject.cs",
+              "RelativeToolTip": "MyFirstWindowsFormsControlLibraryForAVEVA\\Models\\InputObject.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T06:58:02.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControl1.cs",
+              "DocumentMoniker": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "RelativeDocumentMoniker": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "ToolTip": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "RelativeToolTip": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvzoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T06:57:29.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "RelativeDocumentMoniker": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs",
+              "ToolTip": "C:\\Repositorios\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs [Design]",
+              "RelativeToolTip": "MyFirstWindowsFormsControlLibraryForAVEVA\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T06:57:28.028Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

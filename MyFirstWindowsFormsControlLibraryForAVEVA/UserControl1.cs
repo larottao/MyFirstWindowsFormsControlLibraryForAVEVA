@@ -18,39 +18,35 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA
     {
         private List<InputObject> inputObjects = new List<InputObject>();
 
-        #region Assign Mouse down and up events to buttons
+        [Category("OMI Bindable Properties")]
+        [DisplayName("Input 0")]
+        public InputObject Input0 { get; private set; }
 
-        private void buttonRED_MouseDown(object sender, MouseEventArgs e) => objectAction(sender, true);
+        [Category("OMI Bindable Properties")]
+        [DisplayName("Input 1")]
+        public InputObject Input1 { get; private set; }
 
-        private void buttonRED_MouseUp(object sender, MouseEventArgs e) => objectAction(sender, false);
+        [Category("OMI Bindable Properties")]
+        [DisplayName("Input 2")]
+        public InputObject Input2 { get; private set; }
 
-        private void buttonYellow_MouseDown(object sender, MouseEventArgs e) => objectAction(sender, true);
+        [Category("OMI Bindable Properties")]
+        [DisplayName("Input 3")]
+        public InputObject Input3 { get; private set; }
 
-        private void buttonYellow_MouseUp(object sender, MouseEventArgs e) => objectAction(sender, false);
-
-        private void buttonGreen_MouseDown(object sender, MouseEventArgs e) => objectAction(sender, true);
-
-        private void buttonGreen_MouseUp(object sender, MouseEventArgs e) => objectAction(sender, false);
-
-        private void buttonBlue_MouseDown(object sender, MouseEventArgs e) => objectAction(sender, true);
-
-        private void buttonBlue_MouseUp(object sender, MouseEventArgs e) => objectAction(sender, false);
-
-        private void buttonWhite_MouseDown(object sender, MouseEventArgs e) => objectAction(sender, true);
-
-        private void buttonWhite_MouseUp(object sender, MouseEventArgs e) => objectAction(sender, false);
-
-        #endregion Assign Mouse down and up events to buttons
+        [Category("OMI Bindable Properties")]
+        [DisplayName("Input 4")]
+        public InputObject Input4 { get; private set; }
 
         public UserControl1()
         {
             InitializeComponent();
 
-            inputObjects.Add(new InputObject("Input0", buttonRed, pilotLightRed, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING));
-            inputObjects.Add(new InputObject("Input1", buttonYellow, pilotLightYellow, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING));
-            inputObjects.Add(new InputObject("Input2", buttonGreen, pilotLightGreen, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING));
-            inputObjects.Add(new InputObject("Input3", buttonBlue, pilotLightBlue, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING));
-            inputObjects.Add(new InputObject("Input4", buttonWhite, pilotLightWhite, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING));
+            Input0 = new InputObject("Input0", buttonRed, pilotLightRed, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING, false);
+            Input1 = new InputObject("Input1", buttonYellow, pilotLightYellow, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING, false);
+            Input2 = new InputObject("Input2", buttonGreen, pilotLightGreen, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING, true);
+            Input3 = new InputObject("Input3", buttonBlue, pilotLightBlue, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING, false);
+            Input4 = new InputObject("Input4", buttonWhite, pilotLightWhite, InputObject.CON_TYPE.NORMALLY_OPEN_SPRING, false);
 
             AttachButtonEvents();
         }
@@ -62,19 +58,10 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA
 
         private void AttachButtonEvents()
         {
-            foreach (var input in inputObjects)
+            foreach (var input in new[] { Input0, Input1, Input2, Input3, Input4 })
             {
-                input.associatedButon.MouseDown += (s, e) =>
-                {
-                    Console.WriteLine("MouseDown on " + input.associatedButon.Name);
-                    objectAction(s, true);
-                };
-
-                input.associatedButon.MouseUp += (s, e) =>
-                {
-                    Console.WriteLine("MouseUp on " + input.associatedButon.Name);
-                    objectAction(s, false);
-                };
+                input.AssociatedButton.MouseDown += (s, e) => objectAction(input, true);
+                input.AssociatedButton.MouseUp += (s, e) => objectAction(input, false);
             }
         }
 
@@ -89,28 +76,17 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA
             set => label1.Text = value;
         }
 
-        private void objectAction(object sender, bool isDown)
+        private void objectAction(InputObject input, bool isDown)
         {
-            var label = sender as Label;
-            if (label == null)
-                return;
-
-            var input = inputObjects.Find(io => io.associatedButon == label);
-            if (input == null)
-                return;
-
-            if (input.conType == InputObject.CON_TYPE.NORMALLY_OPEN_SPRING)
+            if (input.ConnectionType == InputObject.CON_TYPE.NORMALLY_OPEN_SPRING)
             {
-                input.setActive(isDown);
-                input.pilotImage.Visible = isDown;
+                input.SetActive(isDown);
             }
-
-            Debug.WriteLine(input.tag + " is now " + (isDown ? "ACTIVE" : "INACTIVE"));
+            Debug.WriteLine($"{input.Tag} is now {(isDown ? "ACTIVE" : "INACTIVE")}");
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

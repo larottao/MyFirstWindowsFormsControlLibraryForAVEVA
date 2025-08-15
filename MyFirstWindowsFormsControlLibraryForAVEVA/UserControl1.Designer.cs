@@ -70,29 +70,26 @@
             this.pilotLightRed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pilotLightRed.TabIndex = 8;
             this.pilotLightRed.TabStop = false;
-            this.pilotLightRed.Visible = false;
             // 
             // pilotLightYellow
             // 
             this.pilotLightYellow.Image = ((System.Drawing.Image)(resources.GetObject("pilotLightYellow.Image")));
-            this.pilotLightYellow.Location = new System.Drawing.Point(566, 201);
+            this.pilotLightYellow.Location = new System.Drawing.Point(564, 201);
             this.pilotLightYellow.Name = "pilotLightYellow";
             this.pilotLightYellow.Size = new System.Drawing.Size(63, 105);
             this.pilotLightYellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pilotLightYellow.TabIndex = 9;
             this.pilotLightYellow.TabStop = false;
-            this.pilotLightYellow.Visible = false;
             // 
             // pilotLightGreen
             // 
             this.pilotLightGreen.Image = ((System.Drawing.Image)(resources.GetObject("pilotLightGreen.Image")));
-            this.pilotLightGreen.Location = new System.Drawing.Point(626, 195);
+            this.pilotLightGreen.Location = new System.Drawing.Point(624, 191);
             this.pilotLightGreen.Name = "pilotLightGreen";
             this.pilotLightGreen.Size = new System.Drawing.Size(63, 115);
             this.pilotLightGreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pilotLightGreen.TabIndex = 10;
             this.pilotLightGreen.TabStop = false;
-            this.pilotLightGreen.Visible = false;
             // 
             // pilotLightBlue
             // 
@@ -103,18 +100,16 @@
             this.pilotLightBlue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pilotLightBlue.TabIndex = 11;
             this.pilotLightBlue.TabStop = false;
-            this.pilotLightBlue.Visible = false;
             // 
             // pilotLightWhite
             // 
             this.pilotLightWhite.Image = ((System.Drawing.Image)(resources.GetObject("pilotLightWhite.Image")));
-            this.pilotLightWhite.Location = new System.Drawing.Point(746, 210);
+            this.pilotLightWhite.Location = new System.Drawing.Point(747, 210);
             this.pilotLightWhite.Name = "pilotLightWhite";
             this.pilotLightWhite.Size = new System.Drawing.Size(54, 75);
             this.pilotLightWhite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pilotLightWhite.TabIndex = 12;
             this.pilotLightWhite.TabStop = false;
-            this.pilotLightWhite.Visible = false;
             // 
             // panelFaceplate
             // 
@@ -161,8 +156,6 @@
             this.buttonGreen.Name = "buttonGreen";
             this.buttonGreen.Size = new System.Drawing.Size(46, 47);
             this.buttonGreen.TabIndex = 15;
-            this.buttonGreen.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonGreen_MouseDown);
-            this.buttonGreen.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonGreen_MouseUp);
             // 
             // buttonYellow
             // 
@@ -172,8 +165,6 @@
             this.buttonYellow.Name = "buttonYellow";
             this.buttonYellow.Size = new System.Drawing.Size(46, 47);
             this.buttonYellow.TabIndex = 14;
-            this.buttonYellow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonYellow_MouseDown);
-            this.buttonYellow.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonYellow_MouseUp);
             // 
             // buttonRed
             // 
@@ -183,8 +174,6 @@
             this.buttonRed.Name = "buttonRed";
             this.buttonRed.Size = new System.Drawing.Size(46, 47);
             this.buttonRed.TabIndex = 13;
-            this.buttonRed.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonRED_MouseDown);
-            this.buttonRed.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonRED_MouseUp);
             // 
             // UserControl1
             // 
