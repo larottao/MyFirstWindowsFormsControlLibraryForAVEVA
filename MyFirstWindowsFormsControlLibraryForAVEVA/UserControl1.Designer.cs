@@ -182,7 +182,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(32, 21);
             this.labelVersion.TabIndex = 14;
-            this.labelVersion.Text = "1.1";
+            this.labelVersion.Text = "1.2";
             // 
             // UserControl1
             // 
@@ -195,7 +195,6 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1153, 625);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightRed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightYellow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pilotLightGreen)).EndInit();

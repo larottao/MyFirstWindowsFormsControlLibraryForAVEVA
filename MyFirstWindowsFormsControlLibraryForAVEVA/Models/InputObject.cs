@@ -62,22 +62,6 @@ namespace MyFirstWindowsFormsControlLibraryForAVEVA.Models
             IsActive = argInitialValue; // Will also set PilotImage.Visible
         }
 
-        /// <summary>
-        /// Called by UI events when button is pressed or released.
-        /// </summary>
-        public void SetActive(bool buttonPressed)
-        {
-            // Determine "active" state based on connection type
-            if (ConnectionType == CON_TYPE.NORMALLY_OPEN_SPRING)
-            {
-                IsActive = buttonPressed;
-            }
-            else if (ConnectionType == CON_TYPE.NORMALLY_CLOSED_SPRING)
-            {
-                IsActive = !buttonPressed;
-            }
-        }
-
         public override string ToString()
         {
             return $"{Tag} ({ConnectionType}) Active={IsActive}";
